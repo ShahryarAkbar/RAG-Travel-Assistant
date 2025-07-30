@@ -1,5 +1,5 @@
 
-# ✈️ Conversational Travel Assistant – Kavak Technical Case Study
+#  Conversational Travel Assistant 
 
 This project is a conversational travel assistant designed to simulate an intelligent chatbot that helps users plan international travel. It supports natural language interaction for:
 
@@ -10,7 +10,7 @@ Built using **LangChain**, **OpenAI**, and **FAISS**.
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 travel-assistant/
@@ -26,7 +26,7 @@ travel-assistant/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 1. **Clone the repository**
 
@@ -62,7 +62,7 @@ python main.py
 
 ---
 
-## 💡 How It Works
+##  How It Works
 
 This assistant uses a LangChain agent with two tools:
 
@@ -74,7 +74,7 @@ This assistant uses a LangChain agent with two tools:
 
 ---
 
-## 🧪 Sample Queries
+##  Sample Queries
 
 ```text
 You: Find me a round trip to Tokyo in August via Star Alliance. Avoid overnight layovers.
@@ -86,7 +86,7 @@ Assistant: UAE passport holders can enter Japan visa-free for up to 30 days.
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 - **Python 3.8+**
 - **LangChain** – Agents, Tools, Embeddings
@@ -96,7 +96,7 @@ Assistant: UAE passport holders can enter Japan visa-free for up to 30 days.
 
 ---
 
-## 📬 Submission Instructions
+## Submission Instructions
 
 Once complete:
 1. Push the project to a **public GitHub repository**
@@ -107,7 +107,7 @@ Once complete:
 
 ---
 
-## ✅ Notes
+##  Notes
 
 - Agent-based orchestration using `zero-shot-react-description`
 - Tools are modular and easy to extend
