@@ -16,16 +16,15 @@ from langchain.agents import initialize_agent
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  # Load OpenAI API key from .env
+load_dotenv()  
 
-# --- 1. Load Flights Data ---
+
 FLIGHT_DATA_PATH = Path("data/flights.json")
 
 def load_flights():
     with open(FLIGHT_DATA_PATH, "r") as f:
         return json.load(f)
 
-# --- 2. Flight Search Tool ---
 @tool
 def search_flights(query: str) -> str:
     """Search flights based on a natural language query."""
@@ -38,7 +37,7 @@ def search_flights(query: str) -> str:
             "Star Alliance" in query and flight["alliance"] == "Star Alliance" and
             "overnight" in query and len(flight["layovers"]) == 0
         ):
-            continue  # Skip overnight layovers if user wants to avoid
+            continue  
         if "Tokyo" in query and flight["to"] == "Tokyo":
             result.append(flight)
 
@@ -46,7 +45,7 @@ def search_flights(query: str) -> str:
         return "No matching flights found."
     return json.dumps(result, indent=2)
 
-# --- 3. RAG: Load and Embed Visa/Refund Data ---
+
 def setup_visa_qa():
     loader = TextLoader("data/visa_rules.md")
     documents = loader.load()
@@ -69,7 +68,7 @@ def visa_refund_qa(question: str) -> str:
     docs = vectorstore.similarity_search(question, k=2)
     return "\n\n".join([doc.page_content for doc in docs])
 
-# --- 4. Set Up LangChain Agent ---
+
 llm = ChatOpenAI(temperature=0)
 
 tools = [search_flights, visa_refund_qa]
@@ -81,7 +80,7 @@ agent = initialize_agent(
     verbose=True
 )
 
-# --- 5. Run Assistant Loop ---
+
 if __name__ == "__main__":
     print("🧳 Welcome to the Conversational Travel Assistant!")
     print("Ask me about flights, visa policies, or refund rules.\n")
