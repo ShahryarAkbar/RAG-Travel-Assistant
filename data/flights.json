@@ -1,0 +1,35 @@
+[
+  {
+    "airline": "Turkish Airlines",
+    "alliance": "Star Alliance",
+    "from": "Dubai",
+    "to": "Tokyo",
+    "departure_date": "2024-08-15",
+    "return_date": "2024-08-30",
+    "layovers": ["Istanbul"],
+    "price_usd": 950,
+    "refundable": true
+  },
+  {
+    "airline": "Emirates",
+    "alliance": "SkyTeam",
+    "from": "Dubai",
+    "to": "Tokyo",
+    "departure_date": "2024-08-15",
+    "return_date": "2024-08-30",
+    "layovers": [],
+    "price_usd": 1100,
+    "refundable": false
+  },
+  {
+    "airline": "Singapore Airlines",
+    "alliance": "Star Alliance",
+    "from": "Dubai",
+    "to": "Tokyo",
+    "departure_date": "2024-08-17",
+    "return_date": "2024-08-31",
+    "layovers": ["Singapore"],
+    "price_usd": 970,
+    "refundable": true
+  }
+]
