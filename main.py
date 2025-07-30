@@ -95,7 +95,7 @@ vectorstore = setup_visa_qa()
 def visa_refund_qa(question: str) -> str:
     """Answer visa or refund-related questions."""
     docs = vectorstore.similarity_search(question, k=2)
-    return "\n\n".join([f"📄 {doc.page_content.strip()}" for doc in docs])
+    return "\n\n".join([f"{doc.page_content.strip()}" for doc in docs])
 
 
 tools = [search_flights, visa_refund_qa]
@@ -109,13 +109,13 @@ agent = initialize_agent(
 
 
 if __name__ == "__main__":
-    print("🧳 Welcome to the Conversational Travel Assistant!")
+    print("Welcome to the Conversational Travel Assistant!")
     print("Ask me about flights, visa policies, or refund rules.\n(Type 'exit' or 'quit' to leave)\n")
 
     while True:
         user_input = input("You: ")
         if user_input.lower() in ["exit", "quit"]:
-            print("👋 Goodbye! Safe travels.")
+            print("Goodbye! Safe travels.")
             break
         response = agent.run(user_input)
         print(f"\nAssistant: {response}\n")
