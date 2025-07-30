@@ -83,36 +83,5 @@ Assistant: Turkish Airlines – Dubai to Tokyo | Dates: Aug 15–30 | $950 | Lay
 You: Do UAE citizens need a visa to travel to Japan?
 Assistant: UAE passport holders can enter Japan visa-free for up to 30 days.
 ```
-
 ---
-
-##  Tech Stack
-
-- **Python 3.8+**
-- **LangChain** – Agents, Tools, Embeddings
-- **OpenAI** – LLM (GPT-3.5 Turbo)
-- **FAISS** – Local vector database for document retrieval
-- **dotenv** – Environment variable management
-
----
-
-## Submission Instructions
-
-Once complete:
-1. Push the project to a **public GitHub repository**
-2. Ensure the repo includes:
-   - `main.py`, `README.md`, `requirements.txt`
-   - `data/flights.json` and `data/visa_rules.md`
-3. Email the GitHub link to the **Kavak hiring team** for review.
-
----
-
-##  Notes
-
-- Agent-based orchestration using `zero-shot-react-description`
-- Tools are modular and easy to extend
-- Designed for clarity, reusability, and ease of testing
-
----
-
 Thanks for reviewing this project!
