@@ -31,7 +31,7 @@ travel-assistant/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/travel-assistant.git
+git clone https://github.com/username/travel-assistant.git
 cd travel-assistant
 ```
 
@@ -41,17 +41,17 @@ cd travel-assistant
 pip install -r requirements.txt
 ```
 
-3. **Set your OpenAI API Key**
+3. **Set OpenAI API Key**
 
-Create a `.env` file or set your key in the terminal:
+Create a `.env` file or set key in the terminal:
 
 ```bash
 # In .env file (recommended)
-OPENAI_API_KEY=your_openai_key_here
+OPENAI_API_KEY=openai_key
 
 # Or set in terminal
-export OPENAI_API_KEY=your_openai_key_here       # macOS/Linux
-set OPENAI_API_KEY=your_openai_key_here          # Windows
+export OPENAI_API_KEY=openai_key       # macOS/Linux
+set OPENAI_API_KEY=openai_key          # Windows
 ```
 
 4. **Run the assistant**
